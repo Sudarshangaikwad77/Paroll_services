@@ -1,0 +1,17 @@
+create database payroll_services;
+use payroll_services;
+
+show databases ;
+
+create table employee_payroll( Employee_Id int auto_increment primary key not null,
+Employee_name varchar(20),
+Employye_salary double,
+Strat_Date date);
+
+insert into employee_payroll(Employee_name,Employye_salary,Strat_Date) values ('Raahul',25000, '2021-05-10'),('Vinay', 26000, '2019-06-11'),('ahishek', 22000, '2018-06-11');
+
+select * from employee_payroll;
+
+select Employye_salary from employee_payroll where Employee_name='vinay';
+
+
